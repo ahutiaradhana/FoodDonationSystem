@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Support Food Donation System</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        /* Left side navigation styles */
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #ef6f6f;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #610a69;
+            text-decoration: none;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        /* Main content styles */
+        .content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        section {
+            margin-top: 80px; /* Adjusted margin to accommodate fixed header */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow-y: auto; /* Added overflow property */
+            max-height: calc(100vh - 120px); /* Adjusted max-height to fit remaining viewport height */
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .corporate-support {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .corporate-support-item {
+            flex-basis: 30%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .corporate-support-item:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 0.1em;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="volunteeropputunities.html">Volunteer Oppurtunities</a>
+            <a href="corporatesupport.html">Corporate Support</a>
+            <a href="communityservice.html">Community Service Hours</a>
+        </div>
+
+        <div class="content">
+            <header>
+                <h1>Corporate Support Food Donation System</h1>
+            </header>
+
+            <section>
+                <h2>How Corporate Support Works</h2>
+                <p>
+                    Give funds, volunteer, donate food, and raise awareness. As a corporate supporter of FIND Food Bank, you’ll demonstrate your commitment to ending hunger and sponsoring a brighter, healthier community. Businesses from every sector choose Food Bank as a charitable partner because we make an immediate and lasting impact on hunger and community well-being.
+                </p>
+
+                <div class="corporate-support">
+                    <div class="corporate-support-item">
+                        <img src="images/16.avif" alt="Direct Food Donations:">
+                        <p>Companies donate excess or unsold food products to food banks, shelters, and community organizations.</p>
+                        <p>Farms and food producers contribute fresh produce to ensure a variety of nutritious options for those in need.</p>
+                    </div>
+                    <div class="corporate-support-item">
+                        <img src="images/17.jpg" alt="Financial Contributions">
+                        <p>Companies provide financial support to food banks or non-profit organizations, to purchase food items, maintain infrastructure.</p>
+                        <p>Some corporations encourage employees to donate to food donation programs by matching their contributions.</p>
+                    </div>
+                    <div class="corporate-support-item">
+                        <img src="images/18.png" alt="Technology and Logistics Support">
+                        <p>Companies with transportation capabilities offer their vehicles or logistics support to transport food items from donors to distribution centers.</p>
+                        <p>Corporations with expertise in supply chain management may provide insights to optimize the efficiency of food distribution networks.</p>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                &copy; Copyright <strong>FeedingIndia</strong>. All Rights reserved
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

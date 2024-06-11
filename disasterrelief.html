@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Relief</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Left side navigation styles */
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #ef6f6f;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #610a69;
+            text-decoration: none;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        /* Main content styles */
+        .content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow-y: auto; /* Enable vertical scrolling */
+            max-height: 400px; /* Set a specific height for the sections */
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .donation-form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        .emergency-supplies,
+        .power-outage,
+        .solar-panels {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .emergency-supplies img,
+        .power-outage img,
+        .solar-panels img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="AgenciesandMobilemarkets.html">Agencies and Mobile markets</a>
+            <a href="feedingprogram.html">Feeding Program</a>
+            <a href="disasterrelief.html">Disaster Relief</a>
+            <a href="hungerinourcommunity.html">Hunger in our Community</a>
+            <a href="nutrition.html">Nutrition</a>
+            <a href="communityhealthworkers.html">Community Health Workers</a>
+        </div>
+
+        <div class="content">
+            <header>
+                <h1>Disaster Relief</h1>
+            </header>
+
+            <section class="donation-form">
+                <h2>Food Donation</h2>
+                <p>Help us provide emergency food supplies to those in need.</p>
+                <!-- Add your donation form code here -->
+            </section>
+
+            <section class="emergency-supplies">
+                <h2>Emergency Supplies</h2>
+                <p>We distribute essential emergency supplies for disaster recovery.</p>
+                <div>
+                    <img src="images/19.jpeg" alt="Emergency Supplies 1">
+                    <img src="images/20.png" alt="Emergency Supplies 2">
+                </div>
+                <!-- Add more images and relevant information here -->
+            </section>
+
+            <section class="power-outage">
+                <h2>Power Outage Preparedness and Recovery</h2>
+                <p>Regularly backup important data related to the food donation system to prevent data loss in the event of a power outage. Store backups in a secure and off-site location.</p>
+                <div>
+                    <img src="images/21.jpeg" alt="Power Outage 1">
+                    <img src="images/22.jpeg" alt="Power Outage 2">
+                </div>
+                <!-- Add more images and relevant information here -->
+            </section>
+
+            <section class="solar-panels">
+                <h2>Solar Panels Help Power FIND’s Disaster Response</h2>
+                <p>Solar panels harness energy from the sun, providing a sustainable and renewable source of power for FIND's disaster response efforts.</p>
+                <div>
+                    <img src="images/23.jpeg" alt="Solar Panels 1">
+                </div>
+                <!-- Add more images and relevant information here -->
+            </section>
+
+            <footer>
+                &copy; Copyright <strong>FeedingIndia</strong>. All Rights reserved
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeding Program</title>
+    <style>
+        /* Reset default margin and padding for the body */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        /* Left side navigation styles */
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #ef6f6f;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #610a69;
+            text-decoration: none;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        /* Main content styles */
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Header styles */
+        header {
+            text-align: center;
+            color: #333;
+        }
+
+        header p {
+            color: #022a08;
+        }
+
+        /* Hero section styles */
+        .hero {
+            background-image: url('images/images.jpeg'); /* Update the path to your background image */
+            background-size: cover;
+            background-position: center;
+            color: #f95959;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        /* Program details section styles */
+        .program-details {
+            background-color: #ed6eba;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .details-grid div {
+            text-align: center;
+        }
+
+        .details-grid h3 {
+            color: #4CAF50;
+        }
+
+        /* How to help section styles */
+        .how-to-help {
+            background-color: #765663;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .help-options {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .help-option {
+            text-align: center;
+            max-width: 300px;
+            margin: 20px;
+        }
+
+        .help-option img {
+            max-width: 80px;
+            margin-bottom: 20px;
+        }
+
+        /* Donate section styles */
+        .donate-section {
+            background-color: #d4fd6f;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #ffa7c0;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="AgenciesandMobilemarkets.html">Agencies and Mobile markets</a>
+            <a href="feedingprogram.html">Feeding Program</a>
+            <a href="disasterrelief.html">Disaster Relief</a>
+            <a href="hungerinourcommunity.html">Hunger in our Community</a>
+            <a href="nutrition.html">Nutrition</a>
+            <a href="communityhealthworkers.html">Community Health Workers</a>
+        </div>
+        <div class="content">
+            <header>
+                <div class="header-content">
+                    <h1>Feeding Program for the Needy</h1>
+                    <p>Providing Hope, One Meal at a Time</p>
+                </div>
+            </header>
+
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Together, We Can Make a Difference</h2>
+                    <p>Join us in our mission to alleviate hunger and nourish those in need.</p>
+                </div>
+            </section>
+
+            <section class="program-details">
+                <div class="container">
+                    <h2>Upcoming Program Details</h2>
+                    <div class="details-grid">
+                        <div>
+                            <h3>Date</h3>
+                            <p id="programDate">[Program Date]</p>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p id="programLocation">[Program Location]</p>
+                        </div>
+                        <div>
+                            <h3>Time</h3>
+                            <p id="programTime">[Program Time]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="how-to-help">
+                <div class="container">
+                    <h2>How You Can Help</h2>
+                    <div class="help-options">
+                        <div class="help-option">
+                            <img src="images/download1.jpeg" alt="Volunteer Icon">
+                            <h3>Volunteer</h3>
+                            <p>Join our team of dedicated volunteers and make a direct impact on someone's life.</p>
+                        </div>
+                        <div class="help-option">
+                            <img src="images/download2.jpeg" alt="Donate Icon">
+                            <h3>Donate</h3>
+                            <p>Your generous donation can provide meals to those who need it the most.</p>
+                        </div>
+                        <div class="help-option">
+                            <img src="images/download3.jpeg" alt="Spread Awareness Icon">
+                            <h3>Spread Awareness</h3>
+                            <p>Help us reach more people by spreading awareness about our feeding programs.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="donate-section">
+                <div class="container">
+                    <h2>Donate to Support</h2>
+                    
+                    <p>Your contribution matters. Every donation brings us closer to a hunger-free community.</p>
+                    <button onclick="location.href='homepage.html'">Make a Difference</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            &copy; Copyright <strong>FeedingIndia</strong>. All Rights reserved
+        </div>
+    </footer>
+</body>
+</html>

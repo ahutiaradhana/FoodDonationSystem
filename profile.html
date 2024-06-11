@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;0,800;1,400;1,600&display=swap');
+
+        section {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1acbee;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        :root{
+  --navcolor:rgba(115, 108, 243, 0.365);
+  --navfont:black;
+  --box-shadow:0 .5rem 1rem rgba(0,0,0.1)
+}
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;  
+}
+body{
+  background-color: #f2b3b3;
+}
+/* navigation bar  */
+header{
+  width: 100%;
+  height: 80px;
+  background-color: var(--navcolor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+.logo{
+  font-size: 28px;
+  color:var(--navfont);
+}
+
+.nav-bar ul{
+  display: flex;
+}
+.nav-bar ul li a{
+   display: block;
+   color: var(--navfont);
+   font-size: 20px ;
+   padding:10px 25px;
+   border-radius: 50px;
+   transition: 0.2s;
+   margin: 0 5px;
+
+}
+.nav-bar ul li a:hover{
+  color: var(--navcolor);
+  background-color: var(--navfont);
+}
+.nav-bar ul li a.active{
+  color:var(--navcolor);
+  background-color: var(--navfont);
+}
+
+.heading{
+ font-size: 30px;
+ text-align: center; 
+ text-decoration: underline 5px;
+ text-decoration-color: #08a559;
+}
+    </style>
+</head>
+<body>
+<header>
+        <div class="logo">Food <b style="color: #018445;">Donate</b></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <div class="profile"> 
+    
+<br>
+<section>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Your Name">
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" placeholder="Your Age">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Your Email">
+
+  <label for="phone">Phone No:</label>
+  <input type="tel" id="phone" name="phone" placeholder="Your Phone No">
+
+<a href="#" style="float: left;margin-top: 6px ;border-radius:5px; background-color: #06C167; color: white;padding-left: 10px;padding-right: 10px;">Edit</a>
+</section>
+         <br>
+         <hr>
+         <br>
+         <p class="heading">Your donations</p>
+        <div class="table-container">
+         <div class="table-wrapper">
+        <table class="table">
+        <thead>
+        <tr>
+            <th>food</th>
+            <th>quantity</th>
+            <th>date</th>
+            <th>status</th>
+        </tr>
+        </thead>
+       <tbody>
+        <tr><td>food</td><td>10kg</td><td>jan 1</td> <td>processing</td></tr>
+        <tr><td>food</td><td>5kg</td><td>jan 2</td><td>completed</td></tr>
+        <tr><td>food</td><td>5kg</td><td>jan 2</td><td>completed</td></tr>
+        <tr><td>food</td><td>5kg</td><td>jan 2</td><td>completed</td></tr>
+        <tr><td>food</td><td>5kg</td><td>jan 2</td><td>completed</td></tr>
+        <tr><td>food</td><td>5kg</td><td>jan 2</td><td>completed</td></tr> 
+    
+        </tbody>
+        </table>
+        <br>
+         </div>
+        </div>          
+        </div>
+    </div>    
+</body>
+</html>

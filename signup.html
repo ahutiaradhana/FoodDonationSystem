@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+   <style>
+    body {
+  background-image: url("https://thumbs.dreamstime.com/b/food-grocery-donation-box-white-background-drive-volunteering-concept-181880444.jpg");
+  font-family: 'Open Sans', sans-serif;
+  background-color: #06C167;
+  margin: 0;
+}
+
+.logo {
+  text-align: center;
+  font-size: 22px;
+  color: black;
+}
+
+.regform {
+  width: 450px;
+  background-color: white;
+  margin: 20px auto;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#heading {
+  margin-top: 0;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+}
+
+form {
+  width: 100%;
+}
+
+.input input {
+  width: 100%;
+  font-size: 20px;
+  border: .5px solid #63707E;
+  border-radius: 6px;
+  padding: 14px 15px;
+  box-sizing: border-box;
+  margin: 5px 0px 15px;
+  color: black;
+}
+
+input:focus {
+  background-color: white;
+}
+
+button {
+  background-color: black;
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: .5px solid black;
+  width: 100%;
+}
+
+.radio input {
+  transform: scale(1.5);
+}
+
+button:hover {
+  color: #eeeeee;
+}
+
+.regform .signin-up {
+  font-size: 20px;
+  text-align: center;
+}
+
+.image-radio-group img {
+  width: 218px;
+}
+
+.switch-label-off {
+  color: #fff; /* Text color when switch is off */
+  background-color: #808080; /* Background color when switch is off */
+  margin-right: 5px;
+}
+
+.switch-label-on {
+  color: #fff; /* Text color when switch is on */
+  background-color: #4CAF50; 
+  margin-left: 5px;
+}
+
+
+button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+   </style>
+    
+</head>
+<body>
+    <div class="container">
+    <div class="regform">
+       <div class="panel-body">           </div>
+        <form action="connect.php" method="post">
+            <p class="logo">Food <b style="color: #06C167;">Donate</b></p>            
+            <p id="heading">Create your account</p>           
+            <div class="form-group">
+                <label for="username"><b>User name</b></label><br>              
+                <input type="text" class ="form-control" id="name" name="username" />
+             </div>
+             <div class="form-group">
+                <label for="email"><b>Email</b></label><br>
+                <input type="text" class ="form-control" id="email" name="email" />
+            </div>
+            <div class="form-group">
+                <label for="textlabel"><b>Address</b></label><br>
+                <input type="text" placeholder="Enter Your Address" class ="form-control" name="address" id="address" />
+            </div>
+            <div class="form-group">
+            <label for="number"><b>Phone No.</b></label><br>
+                <input type="tel" placeholder="Enter Your Phone no." class ="form-control" name="phoneno" id="phoneno" required>
+            </div>
+
+            <div class="form-group">
+                <label class="textlabel" for="password"><b>Password</b></label><br>
+                <input type="password" name="password" class ="form-control" id="password">
+             </div>
+    
+            <div class="form-group">
+               <label for="psw-repeat"><b>Repeat Password</b></label><br>
+               <input type="password" placeholder="Repeat Password" class ="form-control" name="pswrepeat" id="pswrepeat" required>
+             </div>
+             <div class="form-group">
+              <label for="email"><b>Gender</b></label>              
+              <div>             
+              <label for="male" class="radio-inline"><input type="radio" name="gender" value="m" id="male">Male</label>             
+              <label for="female" class="radio-inline"><input type="radio" name="gender" value= "f" id="female">Female</label> 
+              <label for="others" class="radio-inline"><input type="radio" name="gender" value="o" id="others">Others</label>             
+              </div>              
+              </div>
+             
+             <div class="btn">
+                <button type="submit" name="sign">Continue</button>
+             </div>
+             <hr>
+             <p>By creating an account you agree to our <a href="privacy.html">Terms & Privacy</a>.</p>
+                
+            <div class="signin-up">
+                 <p style="font-size: 20px; text-align: center;">Already have an account? <a href="login.html"> Sign in</a></p>
+             </div>
+        
+        </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corporation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    label {
+      margin-bottom: 8px;
+      color: #333;
+      flex-basis: 48%;
+    }
+
+    input, textarea {
+      flex-basis: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      flex-basis: 100%;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>For Corporation</h1>
+  </header>
+
+  <section>
+    <h2>Join Us in Fighting Hunger</h2>
+    <p>Partner with us in our mission to make a difference in the community.</p>
+
+    <img src="images/19.jpeg" alt="Partnership Image">
+
+    <p>If your corporation is interested in making a positive impact, fill out the form on our <a href="#partner-form">partner form</a>.</p>
+  </section>
+
+  <section id="partner-form">
+    <h2>Partner With Us</h2>
+    <p>If your corporation is interested in joining our mission to fight hunger, please fill out the form below, and we'll get in touch with you.</p>
+
+    <form action="#" method="post">
+      <label for="companyName">Company Name:</label>
+      <input type="text" id="companyName" name="companyName" required>
+
+      <label for="contactPerson">Contact Person:</label>
+      <input type="text" id="contactPerson" name="contactPerson" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+</body>
+</html>

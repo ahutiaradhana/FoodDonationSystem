@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Contact Us</title>
+
+    <style>
+        body, html {
+            height: 100%;
+            background-image: url("https://easydonationpickup.com/wp-content/uploads/2022/06/putting-canned-goods-and-other-foods-in-a-box.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow-x: hidden;
+            font-family: 'Dosis', sans-serif;
+            text-align: center;
+            margin: 0; /* Resetting default margin */
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #f2f2f2; /* Background color for the table */
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+            font-weight: bold;
+        }
+
+        .rating {
+            display: inline-flex; /* Set to inline-flex for a single line */
+            align-items: center; /* Align stars vertically in the middle */
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            font-size: 30px;
+            color: #817f7f;
+            cursor: pointer;
+            transition: color 0.3s;
+            margin-right: 5px; /* Add some spacing between stars */
+        }
+
+        .rating input:checked ~ label,
+        .rating input:checked ~ label ~ label {
+            color: #a04406;
+        }
+
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: #a04406;
+        }
+
+        .card {
+            border-radius: 16px;
+            color: black;
+            border: none;
+            width: 700px;
+            padding: 10px;
+            margin: 15px auto; /* Center the card horizontally */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+
+        button:hover {
+            background-color: orangered;
+        }
+
+        input[type=text], input[type=date], input[type=time], input[type=number], input[list], textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border-color: black;
+            border: 3px solid darkblue;
+            border-radius: 3ch;
+            background-color: lightgray;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        label {
+            color: black;
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Food Donation System</h1>
+    </header>
+
+    <div class="contact-info">
+        <table>
+            <tr>
+                <th>Our Office</th>
+                <td>GIET University Gunupur</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>feedingindia@gmail.com</td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>+91-7853955492</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="Container">
+        <div class="card">
+            <form action="connect2.php" method="post">
+                <h2>Contact Us</h2>
+
+                <input list="browsers" name="browser" id="browser" placeholder="Select Type">
+
+                <datalist id="browsers">
+                    <option value="Support Request">
+                    <option value="Feedback">
+                </datalist><br><br>
+
+                <input type="text" id="email" name="email" placeholder="Enter Your Email"><br>
+
+                <label>Is there anything you would like to see changed or improved? Please be as specific as you would like.</label><br>
+                <textarea name="feedback" maxlength="1200" cols="50" rows="8"></textarea>
+
+                <div class="rating">
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1">&#9733;</label>
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2">&#9733;</label>
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3">&#9733;</label>
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4">&#9733;</label>
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5">&#9733;</label>
+                </div>
+                <br>
+
+                <div class="btn">
+                    <button type="submit" name="sign">Submit</button>
+                 </div>
+                <a href="homepage.html"><p style="color: black; font-weight: bold;">Continue</p></a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

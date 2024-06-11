@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Service</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Left side navigation styles */
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #ef6f6f;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #610a69;
+            text-decoration: none;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        /* Main content styles */
+        .content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            margin: 2em;
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .donation-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .donation-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+
+        .donation-item:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 0.1em;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="volunteeropputunities.html">Volunteer Oppurtunities</a>
+            <a href="corporatesupport.html">Corporate Support</a>
+            <a href="communityservice.html">Community Service Hours</a>
+        </div>
+
+        <div class="content">
+            <header>
+                <h1>Community Service Hours</h1>
+                <p>Helping those in need</p>
+            </header>
+
+            <section>
+                <h2>Available Donations</h2>
+                <div class="donation-container">
+                    <div class="donation-item">
+                        <img src="images/11.webp" alt="Non-Perishable Food Items" width="80" height="120">
+                        <p>These are foods with a long shelf life that don't require refrigeration. Examples include canned goods (vegetables, fruits, soups), pasta, rice, cereal, beans, and shelf-stable pantry items.</p>
+                       
+                    </div>
+
+                    <div class="donation-item">
+                        <img src="images/12.jpg" alt="Fresh Produce">
+                        <p>Donations of fresh fruits and vegetables can provide essential nutrients. Local farms, grocery stores, and community gardens often contribute to fresh produce donations.</p>
+                    </div>
+
+                    <div class="donation-item">
+                        <img src="images/13.jpg" alt="Dairy and Protein">
+                        <p> Items like milk, eggs, cheese, yogurt, and protein-rich foods such as canned meats (tuna, chicken), peanut butter, and beans are commonly donated.</p>
+                    </div>
+                    
+                    <div class="donation-item">
+                        <img src="images/14.jpg" alt="Hygiene and Non-Food Items">
+                        <p>In addition to food, some donation programs may accept hygiene products, toiletries, and non-food essentials that contribute to overall well-being.</p>
+                    </div>
+
+                    <div class="donation-item">
+                        <img src="images/15.jpg" alt="Financial Donations">
+                        <p>Monetary contributions are often welcome as they allow organizations to purchase specific items, cover operational costs, and address any urgent needs.</p>
+                    </div>
+                    <!-- Add more donation items as needed -->
+                </div>
+            </section>
+
+            <footer>
+                &copy; Copyright <strong>FeedingIndia</strong>. All Rights reserved
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
